@@ -1,0 +1,246 @@
+/* Root settings */
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container settings */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  background-color: #8CC461;
+}
+
+/* Applying margins */
+.main {
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-top: 3vh;
+}
+
+/* Styling the box items */
+.box {
+  width: 50vw;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 2fr, 1fr, 1fr;
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.rps {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  color: white;
+  font-size: xx-large;
+  margin-top: 2vh;
+  margin-left: 3vw;
+
+}
+
+/* Styling the computer score */
+.compScore {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row: 1;
+}
+
+/* Styling the player score */
+.playerScore {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row: 1;
+}
+
+/* Styling the score box */
+.scoreBox {
+  height: 14vh;
+  width: 7vw;
+  box-sizing: content-box;
+  background-color: white;
+  border-radius: 8px;
+  margin: 10px;
+  color: #656565;
+  text-align: center;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.scoreBox p {
+  background-color: white;
+  font-size: xx-large;
+  color: black;
+}
+
+/* Styling the rules button */
+.rules-button {
+  cursor: pointer;
+  position: fixed;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  font-size: 16px;
+  font-weight: bolder;
+  width: 10vw;
+  white-space: normal;
+  word-wrap: break-word;
+  margin-top: 85vh;
+  margin-left: 85vw;
+}
+
+/* Styling the rules close button */
+.close-button {
+  cursor: pointer;
+  background-color: red;
+  border: 4px solid white;
+  border-radius: 70%;
+  color: white;
+  font-size: 50px;
+  position: fixed;
+  height: 10vh;
+  width: 5vw;
+  z-index: 40;
+  margin-top: 27vh;
+  margin-left: 93vw;
+}
+
+/* Styling the rules */
+.rules {
+  z-index: 4;
+  position: fixed;
+  height: fit-content;
+  width: 20vw;
+  border: 4px solid white;
+  border-radius: 8px;
+  margin-left: 75vw;
+  margin-top: 30vh;
+  background-color: #004429;
+  color: white;
+}
+
+/* Apllying the margins */
+.rulePoints {
+  margin-top: 5vh;
+}
+
+/* Styling the unordered list */
+.rulePoints ul {
+  list-style: square;
+  list-style-position: outside;
+  margin-left: 2vw;
+}
+
+/* Setting the color for each list item */
+.rulePoints li {
+  color: #FFD600;
+}
+
+/* Seperating the rules from the list points */
+.rulePoints span {
+  color: white;
+}
+
+/* Styling the player result */
+.your-result {
+  z-index: 2;
+  position: fixed;
+  box-sizing: content-box;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 40vh;
+  margin-left: 30vw;
+  color: white;
+}
+
+/* Styling the computer result */
+.pc-result {
+  z-index: 2;
+  position: fixed;
+  box-sizing: content-box;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 40vh;
+  margin-left: 60vw;
+  color: white;
+}
+
+/* Styling the final result */
+.final-result {
+  z-index: 2;
+  position: fixed;
+  box-sizing: content-box;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 60vh;
+  margin-left: 45vw;
+  color: white;
+  text-align: center;
+}
+
+/* Setting the font size for the you win text */
+#you-win {
+  font-size: xx-large;
+}
+
+/* Setting the font size for against text */
+#against {
+  font-size: x-large;
+}
+
+/* Styling the play again button */
+#playAgain {
+  cursor: pointer;
+  position: fixed;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  font-size: 16px;
+  font-weight: bolder;
+  width: 10vw;
+  white-space: normal;
+  word-wrap: break-word;
+  margin-top: 75vh;
+  margin-left: 44vw;
+}
+
+/* Styling the won image */
+#won {
+  position: fixed;
+  margin-left: 25vw;
+  margin-top: 45vh;
+}
+
+/* Resizing the image */
+#won img {
+  height: 30vh;
+  width: 15vw;
+}
+
+/* Styling the lost image */
+#lost {
+  position: fixed;
+  margin-top: 45vh;
+  margin-left: 55vw;
+}
+
+/* Resizing the image */
+#lost img {
+  height: 30vh;
+  width: 15vw;
+}

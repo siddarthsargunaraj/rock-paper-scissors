@@ -1,0 +1,209 @@
+/* Root settings */
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* COntainer settings */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  background-color: #8CC461;
+}
+
+/* Applying margins */
+.main {
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-top: 3vh;
+}
+
+/* Styling box items */
+.box {
+  width: 50vw;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 2fr, 1fr, 1fr;
+
+  box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+/* Arranging header contents */
+.rps {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  color: white;
+  font-size: xx-large;
+  margin-top: 2vh;
+  margin-left: 3vw;
+}
+
+/* Styling the computer score */
+.compScore {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row: 1;
+}
+
+/* Styling the player score */
+.playerScore {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row: 1;
+}
+
+/* Styling the score box */
+.scoreBox {
+  height: 14vh;
+  width: 7vw;
+  box-sizing: content-box;
+  background-color: white;
+  border-radius: 8px;
+  margin: 10px;
+  color: #656565;
+  text-align: center;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.scoreBox p {
+  background-color: white;
+  font-size: xx-large;
+  color: black;
+}
+
+/* Styling the opions */
+.options {
+  margin-top: 7vh;
+  margin-left: 6vw;
+}
+
+.menu {
+  height: 50vh;
+}
+
+/* Styling the rules button */
+.rules-button {
+  cursor: pointer;
+  position: fixed;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  font-size: 16px;
+  font-weight: bolder;
+  width: 10vw;
+  white-space: normal;
+  word-wrap: break-word;
+  margin-top: 85vh;
+  margin-left: 85vw;
+}
+
+/* Styling the rock button */
+.rock-button {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 70%;
+  border-color: transparent;
+  font-size: 0px;
+  position: fixed;
+  height: 20vh;
+  width: 9vw;
+  margin-left: 32.9vw;
+  margin-top: 30vh;
+  z-index: 100;
+}
+
+/* Styling the scissors button */
+.scissors-button {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 70%;
+  border-color: transparent;
+  font-size: 0px;
+  position: fixed;
+  height: 20vh;
+  width: 9vw;
+  margin-left: 47vw;
+  margin-top: 30vh;
+  z-index: 100;
+}
+
+/* Styling the paper button */
+.paper-button {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 70%;
+  border-color: transparent;
+  font-size: 0px;
+  position: fixed;
+  height: 20vh;
+  width: 9vw;
+  margin-left: 39.9vw;
+  margin-top: 57vh;
+  z-index: 100;
+}
+
+/* Styling the rules close button */
+.close-button {
+  cursor: pointer;
+  background-color: red;
+  border: 4px solid white;
+  border-radius: 70%;
+  color: white;
+  font-size: 50px;
+  position: fixed;
+  height: 10vh;
+  width: 5vw;
+  z-index: 40;
+  margin-top: 27vh;
+  margin-left: 93vw;
+}
+
+/* Styling the rules */
+.rules {
+  z-index: 4;
+  position: fixed;
+  height: fit-content;
+  width: 20vw;
+  border: 4px solid white;
+  border-radius: 8px;
+  margin-left: 75vw;
+  margin-top: 30vh;
+  background-color: #004429;
+  color: white;
+}
+
+/* Apllying the margins */
+.rulePoints {
+  margin-top: 5vh;
+}
+
+/* Styling the unordered list */
+.rulePoints ul {
+  list-style: square;
+  list-style-position: outside;
+  margin-left: 2vw;
+}
+
+/* Setting the color for each list item */
+.rulePoints li {
+  color: #FFD600;
+}
+
+/* Seperating the rules from the list points */
+.rulePoints span {
+  color: white;
+}

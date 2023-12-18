@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/cup.css">
+    <script src="js/cup.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Inserting the images of stars and the cup -->
+        <div class="stars">
+            <img src="img/stars.png" alt="">
+        </div>
+        <div class="cup">
+            <img src="img/cup.png" alt="">
+        </div>
+
+        <!-- The text found below the cup -->
+        <div class="hurray">
+            <b>H U R R A Y ! !</b>
+        </div>
+        <div class="you-won">
+            YOU WON THE GAME
+        </div>
+
+        <!-- Button to play the game again -->
+        <input type="button" id="playAgain" onclick="window.location.replace('index.html')" value="PLAY AGAIN">
+        
+        <!-- Button to close the rules popup -->
+        <button type="button" class="close-button" style="display: none;" id="close-button" onclick="showRules()">X</button>
+
+        <!-- Define the rules of the game -->
+        <div class="rules" id="rules" style="display: none;">
+            <div class="rulePoints">
+            <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GAME RULES</b>
+            <br><br>
+            <ul>
+                <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li><br>
+                <li><span>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."</span></li><br>
+                <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span></li><br>
+                <li><span>If both players lay down the same hand, each player lays down another hand</span></li><br>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Button to display the rules of the game -->
+        <button type="button" class="rules-button" id="rules-button" onclick="showRules()">RULES</button>
+    </div>
+</body>
+</html>

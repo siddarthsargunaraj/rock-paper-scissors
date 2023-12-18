@@ -1,0 +1,143 @@
+/* Root settings */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container settings */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  background-color: #8CC461;
+}
+
+/* Styling the rules button */
+.rules-button {
+  cursor: pointer;
+  position: fixed;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  font-size: 16px;
+  font-weight: bolder;
+  width: 10vw;
+  white-space: normal;
+  word-wrap: break-word;
+  margin-top: 85vh;
+  margin-left: 85vw;
+}
+
+/* Styling the rules close button */
+.close-button {
+  cursor: pointer;
+  background-color: red;
+  border: 4px solid white;
+  border-radius: 70%;
+  color: white;
+  font-size: 50px;
+  position: fixed;
+  height: 10vh;
+  width: 5vw;
+  z-index: 40;
+  margin-top: 27vh;
+  margin-left: 93vw;
+}
+
+/* Styling the rules */
+.rules {
+  z-index: 4;
+  position: fixed;
+  height: fit-content;
+  width: 20vw;
+  border: 4px solid white;
+  border-radius: 8px;
+  margin-left: 75vw;
+  margin-top: 30vh;
+  background-color: #004429;
+  color: white;
+}
+
+/* Apllying the margins */
+.rulePoints {
+  margin-top: 5vh;
+}
+
+/* Styling the unordered list */
+.rulePoints ul {
+  list-style: square;
+  list-style-position: outside;
+  margin-left: 2vw;
+}
+
+/* Setting the color for each list item */
+.rulePoints li {
+  color: #FFD600;
+}
+
+/* Seperating the rules from the list points */
+.rulePoints span {
+  color: white;
+}
+
+/* Adding the stars */
+.stars {
+  position: fixed;
+  margin-left: 35vw;
+  margin-top: 15vh;
+}
+
+/* Adding the cup */
+.cup {
+  position: fixed;
+  margin-left: 45vw;
+  margin-top: 30vh;
+}
+
+/* Styling the hurray text */
+.hurray {
+  position: fixed;
+  font-size: 60px;
+  font-weight: 900;
+  color: white;
+  margin-top: 60vh;
+  margin-left: 40vw;
+}
+
+/* Styling the you won text */
+.you-won {
+  position: fixed;
+  font-size: 35px;
+  font-weight: 900;
+  color: white;
+  margin-top: 70vh;
+  margin-left: 40vw;
+}
+
+/* Styling the play again button */
+#playAgain {
+  cursor: pointer;
+  position: fixed;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  font-size: 16px;
+  font-weight: bolder;
+  width: 10vw;
+  white-space: normal;
+  word-wrap: break-word;
+  margin-top: 80vh;
+  margin-left: 47vw;
+}

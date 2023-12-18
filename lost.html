@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/lost.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <!-- Button to close the rules popup -->
+        <button type="button" class="close-button" id="close-button" style="display: none;" onclick="showRules()">X</button>
+        <!-- Define the rules of the game -->
+        <div class="rules" id="rules" style="display: none;">
+            <div class="rulePoints">
+            <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GAME RULES</b>
+            <br><br>
+            <ul>
+                <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li><br>
+                <li><span>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."</span></li><br>
+                <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span></li><br>
+                <li><span>If both players lay down the same hand, each player lays down another hand</span></li><br>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Display the header -->
+        <div class="main">
+            <div class="box">
+                <div class="rps">
+                    <p>ROCK</p>
+                    <p>PAPER</p>
+                    <p>SCISSORS</p>
+                </div>
+                <!-- Display the computer score -->
+                <div class="compScore">
+                    <div class="scoreBox">
+                        <br>COMPUTER<br>SCORE<br>
+                        <p id="computerScore"></p>
+                    </div>
+                </div>
+                <!-- Display the player score -->
+                <div class="playerScore">
+                    <div class="scoreBox">
+                        <br>YOUR<br>SCORE <br>
+                        <p id="playerScore"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="your-result">
+            YOU PICKED
+        </div>
+
+        <div class="pc-result">
+            PC PICKED
+        </div>
+
+        <!-- Text representation of the result of the game -->
+        <div class="final-result">
+            <b id="you-win">YOU LOST</b><br><br>
+            <b id="against">AGAINST PC</b>
+        </div>
+
+        <!-- Button to play the game again -->
+        <input type="button" id="playAgain" onclick="window.location.replace('index.html')" value="PLAY AGAIN">
+
+        <!-- Button to display the rules of the game -->
+        <input type="button" class="rules-button" onclick="showRules()" value="RULES">
+
+        <!-- Image representation of the result of the game -->
+        <div id="won">
+        </div>
+        <div id="lost">
+        </div>
+    </div>
+
+    <!-- The helper script -->
+    <script src="js/lost.js"></script>
+</body>
+
+</html>
